@@ -2,31 +2,14 @@
 
 module.exports = {
     jade: [[
-        /script\([^\)]*src=['"]([^"']+)["']/gm,
-        'Update the Jade to reference our concat/min/revved script files'
+        /src=['"]([^"']+(?:png|gif|jpe?g|css|js))["']/img,
+        'Update the Jade with src attributes'
     ], [
-        /link\([^\)]*href=['"]([^"']+)["']/gm,
-        'Update the Jade with the new css filenames'
+        /href=['"]([^"']+(?:png|gif|jpe?g|css|js))["']/img,
+        'Update the Jade with href attributes'
     ], [
-        /img\([^\)]*src=['"]([^"']+)["']/gm,
-        'Update the Jade with the new img filenames'
-    ], [
-        /data-main\s*=['"]([^"']+)['"]/gm,
-        'Update the Jade with data-main tags',
-        function (m) { return m.match(/\.js$/) ? m : m + '.js'; },
-        function (m) { return m.replace('.js', ''); }
-    ], [
-        /data-(?!main).[^=]+=['"]([^'"]+)['"]/gm,
-        'Update the Jade with data-* tags'
-    ], [
-        /url\(\s*['"]([^"']+)["']\s*\)/gm,
+        /url\(\s*['"]([^"']+)["']\s*\)/img,
         'Update the Jade with background imgs, case there is some inline style'
-    ], [
-        /a\([^\)]*href=['"]([^"']+)["']/gm,
-        'Update the Jade with anchors images'
-    ], [
-        /input\([^\)]*src=['"]([^"']+)["']/gm,
-        'Update the Jade with reference in input'
     ]],
     js: [[
         /["']([^:"']+\.(?:png|gif|jpe?g))["']/img,
