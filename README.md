@@ -36,6 +36,12 @@ usemin: {
 }
 ```
 
+## Patterns
+
+**jade**: Same as the default patterns provided for `html` files, but available to `jade` templates!
+
+**js**: Patterns to match local (no protocol) images in JavaScript files.
+
 ## License
 
 MIT

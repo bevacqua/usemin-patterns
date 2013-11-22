@@ -27,5 +27,9 @@ module.exports = {
     ], [
         /input\([^\)]*src=['"]([^"']+)["']/gm,
         'Update the Jade with reference in input'
+    ]],
+    js: [[
+        /["']([^:"']+\.(?:png|gif|jpe?g))["']/,
+        'Update JavaScript with images in strings'
     ]]
 };
