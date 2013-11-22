@@ -27,9 +27,11 @@ require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 ```js
 usemin: {
     jade: 'src/views/**/*.jade',
-    assetsDirs: ['public'],
-    patterns: {
-        jade: require('usemin-patterns').jade
+    options: {
+        assetsDirs: ['public'],
+        patterns: {
+            jade: require('usemin-patterns').jade
+        }
     }
 }
 ```
