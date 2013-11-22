@@ -1,7 +1,7 @@
 {
   "name": "usemin-patterns",
   "version": "0.0.1",
-  "description": "Patterns for grunt-usemin",
+  "description": "Ready-to-use patterns for applying `grunt-usemin` on Jade and other templating languages",
   "homepage": "https://github.com/bevacqua/usemin-patterns",
   "author": {
     "name": "Nicolas Bevacqua",
