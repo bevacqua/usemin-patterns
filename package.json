@@ -1,0 +1,13 @@
+{
+  "name": "usemin-patterns",
+  "version": "0.0.1",
+  "description": "Patterns for grunt-usemin",
+  "homepage": "https://github.com/bevacqua/usemin-patterns",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "ng@bevacqua.io",
+    "url": "http://bevacqua.io"
+  },
+  "license": "MIT",
+  "main": "index.js"
+}
